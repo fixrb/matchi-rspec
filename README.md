@@ -5,7 +5,7 @@
 [![Inline docs](http://inch-ci.org/github/fixrb/matchi-rspec.svg?branch=master)][inchpages]
 [![Documentation](http://img.shields.io/:yard-docs-38c800.svg)][rubydoc]
 
-> Extend Matchi matchers with [RSpec](http://rspec.info/)'s ones.
+> Extend [Matchi](https://github.com/fixrb/matchi) matchers with some [RSpec](http://rspec.info/)'s ones.
 
 ## Contact
 
@@ -32,32 +32,24 @@ The `HighSecurity` trust profile will verify all gems.  All of __Matchi::Rspec__
 
 ## Usage
 
-### List all matchers
-
-```ruby
-Matchi.constants # => [:BeFalse, :BeNil, :BeTrue, :Eql, :Equal, :Match, :RaiseException, :Be, :BeInstanceOf, :Eq]
-```
-
-### Built-in RSpec matchers
-
 **Identity** matcher:
 
 ```ruby
-be = Matchi.fetch(:Be, 42)
+be = Matchi::Be.new(42)
 be.matches? { 42 } # => true
 ```
 
 **Type/class** matcher:
 
 ```ruby
-be_instance_of = Matchi.fetch(:BeInstanceOf, String)
+be_instance_of = Matchi::BeInstanceOf.new(String)
 be_instance_of.matches? { 'foo' } # => true
 ```
 
 **Equivalence** matcher:
 
 ```ruby
-eq = Matchi.fetch(:Eq, 'foo')
+eq = Matchi::Eq.new('foo')
 eq.matches? { 'foo' } # => true
 ```
 

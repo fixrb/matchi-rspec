@@ -4,8 +4,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Cyril Wack']
   spec.email         = ['contact@cyril.email']
 
-  spec.summary       = "Extend Matchi matchers with RSpec's ones."
-  spec.description   = 'Matchi extension gem to provide the RSpec matchers.'
+  spec.summary       = "Extend Matchi matchers with some RSpec's ones."
+  spec.description   = 'Matchi extension gem to provide some RSpec matchers.'
   spec.homepage      = 'https://github.com/fixrb/matchi-rspec'
   spec.license       = 'MIT'
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'matchi',                 '~> 0.0'
+  spec.add_dependency 'matchi',                 '~> 0.1.2'
 
   spec.add_development_dependency 'bundler',    '~> 1.10'
   spec.add_development_dependency 'rake',       '~> 10.4'

@@ -86,3 +86,9 @@ See `LICENSE.md` file.
 [travis]: https://travis-ci.org/fixrb/matchi-rspec
 [inchpages]: http://inch-ci.org/github/fixrb/matchi-rspec/
 [rubydoc]: http://rubydoc.info/gems/matchi-rspec/frames
+
+***
+
+This project is sponsored by:
+
+[![Sashite](http://www.sashite.com/assets/img/sashite.png)](http://www.sashite.com/)

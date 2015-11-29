@@ -1,7 +1,7 @@
 require_relative File.join 'support', 'coverage'
 require_relative File.join '..', 'lib', 'matchi', 'rspec'
 
-matcher = Matchi::BeInstanceOf.new(String)
+matcher = Matchi::Matchers::BeInstanceOf::Matcher.new(String)
 
 # It is expected to be true
 fail unless matcher.matches? { 'foo' }

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'matchi'
 
 Dir[File.join File.dirname(__FILE__), 'rspec', '*.rb'].each do |fname|

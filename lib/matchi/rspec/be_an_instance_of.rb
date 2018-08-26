@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'be_instance_of'
 
 # Namespace for the Matchi library.

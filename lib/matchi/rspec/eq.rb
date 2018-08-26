@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Namespace for the Matchi library.
 module Matchi
   # Collection of matchers.

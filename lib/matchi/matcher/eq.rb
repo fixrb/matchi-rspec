@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
+require 'matchi/matcher/eql'
+
 # Namespace for the Matchi library.
 module Matchi
-  # Collection of matchers.
-  module Matchers
+  # Collection of matcher classes.
+  module Matcher
     # **Equivalence** matcher.
-    module Eq
-      # The matcher.
-      class Matcher < Eql::Matcher
-      end
+    class Eq < ::Matchi::Matcher::Eql
     end
   end
 end

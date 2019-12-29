@@ -4,13 +4,10 @@ require_relative 'be_instance_of'
 
 # Namespace for the Matchi library.
 module Matchi
-  # Collection of matchers.
-  module Matchers
+  # Collection of matcher classes.
+  module Matcher
     # **Type/class** matcher.
-    module BeAnInstanceOf
-      # The matcher.
-      class Matcher < BeInstanceOf::Matcher
-      end
+    class BeAnInstanceOf < BeInstanceOf
     end
   end
 end

@@ -10,13 +10,14 @@ Gem::Specification.new do |spec|
   spec.homepage     = 'https://github.com/fixrb/matchi-rspec'
   spec.license      = 'MIT'
   spec.files        = Dir['LICENSE.md', 'README.md', 'lib/**/*']
+  spec.required_ruby_version = '>= 2.7.0'
 
   spec.add_dependency 'matchi', '~> 2.0.0'
 
-  spec.add_development_dependency 'bundler',    '~> 2.1'
-  spec.add_development_dependency 'rake',       '~> 13.0'
-  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rubocop-performance'
-  spec.add_development_dependency 'simplecov',  '~> 0.17'
-  spec.add_development_dependency 'yard',       '~> 0.9'
+  spec.add_development_dependency 'rubocop-thread_safety'
+  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'yard'
 end

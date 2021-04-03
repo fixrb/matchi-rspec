@@ -1,8 +1,9 @@
 # Matchi::Rspec
 
-[![Build Status](https://travis-ci.org/fixrb/matchi-rspec.svg?branch=master)][travis]
+[![RuboCop Status](https://github.com/fixrb/matchi-rspec/workflows/RuboCop/badge.svg)][workflow_rubocop]
+[![Build Status](https://api.travis-ci.org/fixrb/matchi-rspec.svg?branch=master)][travis]
 [![Gem Version](https://badge.fury.io/rb/matchi-rspec.svg)][gem]
-[![Inline docs](http://inch-ci.org/github/fixrb/matchi-rspec.svg?branch=master)][inchpages]
+[![Inline docs](https://inch-ci.org/github/fixrb/matchi-rspec.svg?branch=master)][inchpages]
 [![Documentation](http://img.shields.io/:yard-docs-38c800.svg)][rubydoc]
 
 > Extend [Matchi](https://github.com/fixrb/matchi) matchers with some [RSpec](https://rspec.info/)'s ones.
@@ -49,13 +50,6 @@ eq.matches? { 'foo' } # => true
 ## Contact
 
 * Home page: https://github.com/fixrb/matchi-rspec
-* Bugs/issues: https://github.com/fixrb/matchi-rspec/issues
-
-## Rubies
-
-* [MRI](https://www.ruby-lang.org/)
-* [Rubinius](https://rubinius.com/)
-* [JRuby](https://www.jruby.org/)
 
 ## Versioning
 
@@ -63,7 +57,7 @@ __Matchi::Rspec__ follows [Semantic Versioning 2.0](https://semver.org/).
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The [gem](https://rubygems.org/gems/matchi-rspec) is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ***
 
@@ -74,7 +68,8 @@ The gem is available as open source under the terms of the [MIT License](https:/
     alt="Sashite" /></a>
 </p>
 
+[workflow_rubocop]: https://github.com/fixrb/matchi-rspec/actions?query=workflow%3ARuboCop
 [gem]: https://rubygems.org/gems/matchi-rspec
 [travis]: https://travis-ci.org/fixrb/matchi-rspec
-[inchpages]: http://inch-ci.org/github/fixrb/matchi-rspec
-[rubydoc]: http://rubydoc.info/gems/matchi-rspec/frames
+[inchpages]: https://inch-ci.org/github/fixrb/matchi-rspec
+[rubydoc]: https://rubydoc.info/gems/matchi-rspec/frames

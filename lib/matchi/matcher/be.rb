@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'matchi/matcher/equal'
+require "matchi/matcher/equal"
 
 # Namespace for the Matchi library.
 module Matchi

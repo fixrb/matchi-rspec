@@ -1,19 +1,19 @@
 # Matchi::Rspec
 
 [![RuboCop Status](https://github.com/fixrb/matchi-rspec/workflows/RuboCop/badge.svg)][workflow_rubocop]
-[![Build Status](https://api.travis-ci.org/fixrb/matchi-rspec.svg?branch=master)][travis]
+[![Build Status](https://api.travis-ci.org/fixrb/matchi-rspec.svg?branch=main)][travis]
 [![Gem Version](https://badge.fury.io/rb/matchi-rspec.svg)][gem]
-[![Inline docs](https://inch-ci.org/github/fixrb/matchi-rspec.svg?branch=master)][inchpages]
+[![Inline docs](https://inch-ci.org/github/fixrb/matchi-rspec.svg?branch=main)][inchpages]
 [![Documentation](http://img.shields.io/:yard-docs-38c800.svg)][rubydoc]
 
-> Extend [Matchi](https://github.com/fixrb/matchi) matchers with some [RSpec](https://rspec.info/)'s ones.
+> Extend [Matchi](https://github.com/fixrb/matchi) matchers with some RSpec's ones.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'matchi-rspec'
+gem "matchi-rspec"
 ```
 
 And then execute:
@@ -37,14 +37,14 @@ be.matches? { 42 } # => true
 
 ```ruby
 be_instance_of = Matchi::Matcher::BeInstanceOf.new(String)
-be_instance_of.matches? { 'foo' } # => true
+be_instance_of.matches? { "foo" } # => true
 ```
 
 **Equivalence** matcher:
 
 ```ruby
-eq = Matchi::Matcher::Eq.new('foo')
-eq.matches? { 'foo' } # => true
+eq = Matchi::Matcher::Eq.new("foo")
+eq.matches? { "foo" } # => true
 ```
 
 ## Contact
@@ -64,7 +64,7 @@ The [gem](https://rubygems.org/gems/matchi-rspec) is available as open source un
 <p>
   This project is sponsored by:<br />
   <a href="https://sashite.com/"><img
-    src="https://github.com/fixrb/matchi-rspec/raw/master/img/sashite.png"
+    src="https://github.com/fixrb/matchi-rspec/raw/main/img/sashite.png"
     alt="Sashite" /></a>
 </p>
 

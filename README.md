@@ -38,6 +38,9 @@ be.matches? { 42 } # => true
 ```ruby
 be_instance_of = Matchi::Matcher::BeInstanceOf.new(String)
 be_instance_of.matches? { "foo" } # => true
+
+be_an_instance_of = Matchi::Matcher::BeAnInstanceOf.new(String)
+be_an_instance_of.matches? { "foo" } # => true
 ```
 
 **Equivalence** matcher:

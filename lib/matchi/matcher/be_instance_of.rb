@@ -19,20 +19,15 @@ module Matchi
         @expected = expected
       end
 
-      # @todo For security reasons, instead of comparing actual with expected,
-      #   we should compare expected with actual.  Using something such as:
-      #   `expected.class_of?(actual)`.
-      #
       # @example Is it an instance of string?
       #   be_instance_of = Matchi::Matcher::BeInstanceOf.new(String)
       #   be_instance_of.matches? { 'foo' } # => true
       #
-      # @yieldreturn [#instance_of?] the actual value to compare to the
-      #   expected one.
+      # @yieldreturn [#class] the actual value to compare to the expected one.
       #
       # @return [Boolean] Comparison between actual and expected values.
       def matches?
-        yield.instance_of?(expected)
+        expected.equal?(yield.class)
       end
     end
   end

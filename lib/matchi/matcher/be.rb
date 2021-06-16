@@ -6,7 +6,11 @@ require "matchi/matcher/equal"
 module Matchi
   # Collection of matcher classes.
   module Matcher
-    # **Identity** matcher.
+    # *Identity* matcher.
+    #
+    # @example
+    #   equal = Matchi::Matcher::Equal.new(:foo)
+    #   equal.matches? { :foo } # => true
     class Be < ::Matchi::Matcher::Equal
     end
   end

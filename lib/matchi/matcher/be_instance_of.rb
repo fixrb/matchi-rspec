@@ -1,34 +1,17 @@
 # frozen_string_literal: true
 
-require "matchi/matcher/base"
+require "matchi/matcher/be_an_instance_of"
 
 # Namespace for the Matchi library.
 module Matchi
   # Collection of matcher classes.
   module Matcher
-    # **Type/class** matcher.
-    class BeInstanceOf < ::Matchi::Matcher::Base
-      # Initialize the matcher with an object.
-      #
-      # @example A string matcher
-      #   Matchi::Matcher::BeInstanceOf.new(String)
-      #
-      # @param expected [#object_id] An expected class.
-      def initialize(expected)
-        super()
-        @expected = expected
-      end
-
-      # @example Is it an instance of string?
-      #   be_instance_of = Matchi::Matcher::BeInstanceOf.new(String)
-      #   be_instance_of.matches? { 'foo' } # => true
-      #
-      # @yieldreturn [#class] the actual value to compare to the expected one.
-      #
-      # @return [Boolean] Comparison between actual and expected values.
-      def matches?
-        expected.equal?(yield.class)
-      end
+    # *Type/class* matcher.
+    #
+    # @example
+    #   be_instance_of = Matchi::Matcher::BeInstanceOf.new(String)
+    #   be_instance_of.matches? { "foo" } # => true
+    class BeInstanceOf < ::Matchi::Matcher::BeAnInstanceOf
     end
   end
 end

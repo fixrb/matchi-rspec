@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.license      = "MIT"
   spec.files        = Dir["LICENSE.md", "README.md", "lib/**/*"]
 
-  spec.add_dependency "matchi", "~> 2.0.2"
+  spec.add_dependency "matchi", "~> 2.1.0"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"

@@ -6,7 +6,11 @@ require "matchi/matcher/eql"
 module Matchi
   # Collection of matcher classes.
   module Matcher
-    # **Equivalence** matcher.
+    # *Equivalence* matcher.
+    #
+    # @example
+    #   eql = Matchi::Matcher::Eql.new("foo")
+    #   eql.matches? { "foo" } # => true
     class Eq < ::Matchi::Matcher::Eql
     end
   end

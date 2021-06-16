@@ -3,7 +3,6 @@
 [![RuboCop Status](https://github.com/fixrb/matchi-rspec/workflows/RuboCop/badge.svg)][workflow_rubocop]
 [![Build Status](https://api.travis-ci.org/fixrb/matchi-rspec.svg?branch=main)][travis]
 [![Gem Version](https://badge.fury.io/rb/matchi-rspec.svg)][gem]
-[![Inline docs](https://inch-ci.org/github/fixrb/matchi-rspec.svg?branch=main)][inchpages]
 [![Documentation](http://img.shields.io/:yard-docs-38c800.svg)][rubydoc]
 
 > Extend [Matchi](https://github.com/fixrb/matchi) matchers with some RSpec's ones.
@@ -38,9 +37,6 @@ be.matches? { 42 } # => true
 ```ruby
 be_instance_of = Matchi::Matcher::BeInstanceOf.new(String)
 be_instance_of.matches? { "foo" } # => true
-
-be_an_instance_of = Matchi::Matcher::BeAnInstanceOf.new(String)
-be_an_instance_of.matches? { "foo" } # => true
 ```
 
 **Equivalence** matcher:
@@ -74,5 +70,4 @@ The [gem](https://rubygems.org/gems/matchi-rspec) is available as open source un
 [workflow_rubocop]: https://github.com/fixrb/matchi-rspec/actions?query=workflow%3ARuboCop
 [gem]: https://rubygems.org/gems/matchi-rspec
 [travis]: https://travis-ci.org/fixrb/matchi-rspec
-[inchpages]: https://inch-ci.org/github/fixrb/matchi-rspec
 [rubydoc]: https://rubydoc.info/gems/matchi-rspec/frames

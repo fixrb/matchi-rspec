@@ -1,9 +1,10 @@
 # Matchi::Rspec
 
-[![RuboCop Status](https://github.com/fixrb/matchi-rspec/workflows/RuboCop/badge.svg)][workflow_rubocop]
-[![Build Status](https://api.travis-ci.org/fixrb/matchi-rspec.svg?branch=main)][travis]
-[![Gem Version](https://badge.fury.io/rb/matchi-rspec.svg)][gem]
-[![Documentation](http://img.shields.io/:yard-docs-38c800.svg)][rubydoc]
+[![Version](https://img.shields.io/github/v/tag/fixrb/matchi-rspec?label=Version&logo=github)](https://github.com/fixrb/matchi-rspec/releases)
+[![Yard documentation](https://img.shields.io/badge/Yard-documentation-blue.svg?logo=github)](https://rubydoc.info/github/fixrb/matchi-rspec/main)
+[![CI](https://github.com/fixrb/matchi-rspec/workflows/CI/badge.svg?branch=main)](https://github.com/fixrb/matchi-rspec/actions?query=workflow%3Aci+branch%3Amain)
+[![RuboCop](https://github.com/fixrb/matchi-rspec/workflows/RuboCop/badge.svg?branch=main)](https://github.com/fixrb/matchi-rspec/actions?query=workflow%3Arubocop+branch%3Amain)
+[![License](https://img.shields.io/github/license/fixrb/matchi-rspec?label=License&logo=github)](https://github.com/fixrb/matchi-rspec/raw/main/LICENSE.md)
 
 > Extend [Matchi](https://github.com/fixrb/matchi) matchers with some RSpec's ones.
 
@@ -17,11 +18,15 @@ gem "matchi-rspec"
 
 And then execute:
 
-    $ bundle
+```sh
+bundle
+```
 
 Or install it yourself as:
 
-    $ gem install matchi-rspec
+```sh
+gem install matchi-rspec
+```
 
 ## Usage
 
@@ -66,8 +71,3 @@ The [gem](https://rubygems.org/gems/matchi-rspec) is available as open source un
     src="https://github.com/fixrb/matchi-rspec/raw/main/img/sashite.png"
     alt="Sashite" /></a>
 </p>
-
-[workflow_rubocop]: https://github.com/fixrb/matchi-rspec/actions?query=workflow%3ARuboCop
-[gem]: https://rubygems.org/gems/matchi-rspec
-[travis]: https://travis-ci.org/fixrb/matchi-rspec
-[rubydoc]: https://rubydoc.info/gems/matchi-rspec/frames

@@ -30,6 +30,16 @@ gem install matchi-rspec
 
 ## Usage
 
+To make __Matchi::Rspec__ available:
+
+```ruby
+require "matchi/rspec"
+```
+
+All examples here assume that this has been done.
+
+### Built-in matchers
+
 **Identity** matcher:
 
 ```ruby

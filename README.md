@@ -61,6 +61,27 @@ eq = Matchi::Matcher::Eq.new("foo")
 eq.matches? { "foo" } # => true
 ```
 
+### Helper methods
+
+For convenience, it is possible to instantiate a matcher with a method rather than with its class.
+To do so, the `Helper` module can be included like this:
+
+```ruby
+require "matchi/helper"
+
+class MatcherCollection
+  include ::Matchi::Helper
+end
+```
+
+The set of loaded matcher then becomes accessible via a dynamically generated instance method, like these:
+
+```ruby
+matcher = MatcherCollection.new
+matcher.be(42).matches? { 44 } # => false
+matcher.be_instance_of(String).matches? { "안녕하세요" } # => true
+```
+
 ## Contact
 
 * Home page: https://github.com/fixrb/matchi-rspec
